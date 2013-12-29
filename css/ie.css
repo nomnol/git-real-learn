@@ -1,0 +1,12 @@
+* html .main {
+  height: 100%;
+}
+
+ul, li, a {
+  zoom: 1;
+}
+
+.drop_wrap_cont li {
+  /*display: inline;*/
+  float: left;
+}

@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  /*outline: none;*/
+}
+
+.g-clrfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  font: 0 / 0 a;
+  height: 0;
+  visibility: hidden;
+}
+
+.addedClass {
+  font: 2em Verdana, sans-serif;
+  color: #f0f;
+}
+
+html {
+  /*background: #ccc;*/
+}
+
+.foot {
+  width: 600px;
+  padding: 20px;
+  background: rgba(255, 0, 0, .3);
+  margin: 0 auto;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.foot a {
+  padding: 20px;
+  background: #000;
+  color: #ff0
+}
+/*
+
+.main_nav {
+}
+*/
+
+.main_nav {
+  float: left;
+  border: 1px solid #000;
+  background: #fff;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+.main_nav a:hover {
+  background: #eee;
+}
+
+.main_nav li {
+  /*border: 1px solid #000;*/
+  position: relative;
+  /*width: 200px;*/
+}
+
+.main_nav, .inner_nav {
+  list-style: none;
+}
+
+.inner_nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  background: #fff;
+}
+
+.main_nav a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: olive;
+  display: block;
+}
+
+.inner_nav li {
+  display: block;
+}
+
+.inner_nav a {
+  color: #6495ed;
+  font: bold 1.25em Verdana;
+}
+
+table {
+  width: 400px;
+  margin: 30px;
+  border-collapse: collapse;
+}
+
+table tr {
+
+}
+
+table tr td {
+  padding: 6px;
+  border: 1px solid green;
+}
+
+
+
+.inner_nav a:hover {
+  color: #708090;
+}
+
+h1, h3, h4, h5, h6 {
+  color: black !important;
+}
+
+a#click:focus {
+  /*outline: none;*/
+}
+
+body {
+  padding: 0 0 300px;
+}
+
+.zebra {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#created {
+  display: block;
+  margin: 4px;
+  padding: 4px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.spoiler {
+  display: block;
+  margin: 10px 20px;
+  padding: 10px;
+  background: #fc0;
+  width: 200px;
+}
+
+.blocked {
+  display: block;
+  margin: 10px;
+  position: relative;
+  padding: 4px;
+}
+
+input[type=button] {
+  padding: 4px;
+  color: yellow;
+  background: #000;
+  margin: 10px;
+
+}
+
+.drop_wrap_cont {
+  margin: 20px 40px;
+  font-size: 0;
+}
+
+.drop_wrap_cont li {
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+}
+
+.drop_wrap_cont a.drop_wrap {
+  padding: 4px;
+  display: block;
+  background: #6495ed;
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  font: bold 1.1em Consolas, Verdana, sans-serif;
+}
+
+.drop_wrap_cont a.drop_wrap:hover {
+  background: #000;
+  color: #ff8c00;
+  border-bottom: 3px solid #6495ed;
+  /*border-left: 3px solid #ff8c00;*/
+}
+
+
+.dropped_down {
+  /*height: 0;*/
+  display: none;
+  border: 2px solid black;
+  position: absolute;
+  top: 26px;
+  left: 4px;
+  /*text-shadow: #f00 2px 2px 2px;*/
+}
+
+.dropped_down li {
+  display: block;
+}
+
+.dropped_down li a {
+  display: block;
+  white-space: nowrap;
+  background: #f5f5dc;
+  text-decoration: none;
+  font: bold .9em 'Trebuchet MS', sans-serif;
+  padding: 2px 4px;
+  color: #000;
+}
+
+.dropped_down li a:hover {
+  background: black;
+  color: #ff8c00;
+}
+
+.forStyle {
+  display: block;
+  cursor: pointer;
+}
+
+/*
+a {
+  background: url(../i/otsos.gif);
+  width: 100px;
+  height: 100px;
+  border: none;
+  display: none;
+}
+*/
+
+.b-link {
+  color: #dc143c;
+  /*border: 1px dotted green;*/
+  font: bold 2em 'Corbel', sans-serif;
+  text-decoration: none;
+  display: block;
+  outline: none;
+  text-align: center;
+}
+
+.b-link:hover {
+  color: #000;
+}
+
+.a-link-med {
+  display: block;
+  margin: 20px 70px;
+  font: bold 16px Verdana;
+  color: #fff;
+  border: 2px solid red;
+  background: #ccc;
+  width: 50px;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.a-link-med:hover {
+  border: 2px solid yellow;
+  background: #333;
+  color: #fff;
+}
+
+.even {
+  background: #333;
+  color: #900;
+  font: bold 19px Verdana, sans-serif;
+}
+
+.odd {
+  background: #87ceeb;
+  color: #333;
+}
+
+ul {
+  margin: 40px 10%;
+}
+
+.list-item a {
+  margin: 10px auto;
+  font-size: 18px;
+  min-height: 500px;
+}
+
