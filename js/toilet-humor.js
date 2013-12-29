@@ -1,20 +1,74 @@
+var a = 2 + 2;
+switch(a) {
+    case 4:
+        alert('Верно!');
+        break;
+    case 3:                    // (*)
+    case 5:                    // (**)
+        alert('Неверно!');
+        break;
+    default:
+        alert('Я таких значений не знаю');
+}
+/*
+var a = 2 + 2;
+switch(a) {
+    case 3:
+        alert('Неверно!');
+        break;
+    case 4:                    // (*)
+    case 5:                    // (**)
+        console.log('верно!');
+        break;
+    default:
+        alert('Я таких значений не знаю');
+}
+*/
+/*
+var a = 1;
+var b = '2';
+switch(a) {
+    case (+ b) - 1:
+        console.log('a is true');
+        break;
+    default:
+        alert('нет-нет, выполнится вариант выше')
+}
+*/
+/*
+var a = 2 + 2;
+switch(a) {
+    case 3:
+        alert('Маловато');
+        break;
+    case 4:
+        alert('В точку!');
+        break;
+    case 5:
+        alert('Перебор');
+        break;
+    default:
+        alert('Я таких значений не знаю');
+}
+*/
 
+
+/*
 var x = 1;
 for(var i = 0; i < x; i ++) {
     x ++;
     switch(x) {
         case 4:
             console.log(x);
-//            break;
         case 5:
             console.log(x);
-//            break;
     }
     if(i == 11) {
         console.log(i);
         break;
     }
 }
+*/
 
 /*
 document.ready(test())
