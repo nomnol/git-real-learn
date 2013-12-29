@@ -287,10 +287,3 @@ a {
 ul {
   margin: 40px 10%;
 }
-
-.list-item a {
-  margin: 10px auto;
-  font-size: 18px;
-  min-height: 500px;
-}
-
