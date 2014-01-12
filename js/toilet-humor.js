@@ -1,3 +1,88 @@
+/*
+var a = + prompt('a?', '')
+switch(a) {
+    case 0:
+        alert(0);
+        break;
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert('2, 3');
+        break;
+}
+*/
+
+/*var a = + prompt('a?', '');
+
+
+if (a == 0) {
+  alert(0);
+}
+if (a == 1) {
+  alert(1);
+}
+
+if (a == 2 ||  a == 3) {
+  alert('2,3');
+}
+*/
+
+/*
+var arg = prompt('Insert number');
+switch(arg) {
+    case "0":
+    case "1":
+        alert('Один или ноль');
+    case "2":
+        alert('Два');
+        break;
+    case "3":
+        alert('Никогда не выполнится');
+    case null:
+        alert('Отмена');
+        break;
+    default :
+        alert('Неизвестное значение ' + arg)
+}
+*/
+
+/*
+var browser = prompt('Insert your browser', '');
+
+if(browser == 'IE') {
+    alert('О, да у вас IE!');
+}
+else if(browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
+    alert('Да, и эти браузеры мы поддерживаем');
+}
+else {
+    alert('Мы надеемся, что и в вашем браузере все ок!');
+}
+*/
+
+/*
+switch (browser) {
+  case 'IE':
+    alert('О, да у вас IE!');
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert('Да, и эти браузеры мы поддерживаем');
+    break;
+
+  default:
+    alert('Мы надеемся, что и в вашем браузере все ок!');
+}
+*/
+
+
+
+/*
 var a = 2 + 2;
 switch(a) {
     case 4:
@@ -10,6 +95,8 @@ switch(a) {
     default:
         alert('Я таких значений не знаю');
 }
+*/
+
 /*
 var a = 2 + 2;
 switch(a) {
