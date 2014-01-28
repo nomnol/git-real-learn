@@ -1,4 +1,88 @@
 /*
+var age = prompt('insert your age', '');
+var sayHi;
+
+if(age >= 18) {
+    sayHi = function() {console.log('ok, welcome!, your age is ' + age);}
+}
+else {
+    sayHi = function() {console.log('no, you\'re to young');}
+}
+
+sayHi();
+*/
+
+/*
+sayHi();
+var sayHi = function() {
+    alert('asdf');
+}
+*/
+
+/*
+var arr = [1, 2, function al(person) {console.log(person);}, 'person'];
+var fan = arr[2];
+fan('jkk')
+*/
+
+/*
+var num = 20;
+if(num >= 17) {
+    function sayHi() {
+        console.log('asdf');
+    }
+}
+else {
+    function sayHi() {
+        console.log('qwer');
+    }
+}
+
+console.log(sayHi());
+*/
+
+/*
+sayHi('Peter');
+
+function sayHi(person) {
+    console.log(person);
+}
+*/
+
+
+/*
+function func() {}
+
+var func = 5;
+console.log(func);
+*/
+
+/*
+function func() {
+    console.log(1);
+}
+
+var g = func;
+func = null;
+g();
+func();
+
+*/
+/*
+function sayHi(person) {
+    console.log('Hi ' + person);
+}
+
+var fanc = sayHi;
+
+fanc('asdf')
+sayHi('qwer')
+*/
+
+
+
+
+/*
 var a = + prompt('a?', '')
 switch(a) {
     case 0:
