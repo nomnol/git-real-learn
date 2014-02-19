@@ -1,3 +1,120 @@
+function count() {
+    for(var i = 0; i < 3; i ++) {
+        var j = i * 2;
+    }
+    console.log(i); // i=3, на этом значении цикл остановился
+    console.log(j); // j=4, последнее значение, на котором цикл сработал, было i=2
+}
+
+count()
+/*
+function msg() {
+    var msggg = 'asdf qwer';
+    console.log(msggg);
+    return msggg;
+}
+
+msg();
+console.log(msg());
+*/
+
+/*
+console.log(i);
+i = 5;
+{var i;}
+*/
+
+
+/*
+alert(a in window);
+alert(a);
+alert(f);
+alert(g);
+
+var a;
+function f(){}
+var g = function() {}
+
+
+*/
+
+
+/*
+var f = function sayHi(n) {
+  alert(n);
+  sayHi = 0;
+  alert('asdf');
+};
+
+f(1);
+f(2);
+*/
+
+
+/*
+function g() {
+    return 1;
+}
+alert(g);
+
+(function g() {
+    return 1;
+})
+alert(g);
+*/
+
+/*
+function f(n) {
+  return n ? n * f(n - 1) : 1;
+};
+
+alert(f(5)); // 120
+*/
+
+
+/*
+var func = function sayHi() {
+    console.log('asdf');
+    sayHi()
+}
+*/
+
+
+/*
+function g() {
+    console.log('asdf');
+}
+
+var f = g;
+
+g = function() {
+    console.log('qwer');
+}
+console.log(f);
+console.log(g);
+*/
+
+/*
+var result = (function(a, b) {
+    return a + b;
+})(2, 4);
+
+console.log(result);
+
+
+*/
+
+
+/*
+!function () {
+    console.log('immediately invoked');
+    var con = function() {
+        return console.log('con');
+    }
+    con();
+}()
+
+*/
 /*
 var age = prompt('insert your age', '');
 var sayHi;
@@ -73,9 +190,9 @@ function sayHi(person) {
     console.log('Hi ' + person);
 }
 
-var fanc = sayHi;
+var result = sayHi;
 
-fanc('asdf')
+result('asdf')
 sayHi('qwer')
 */
 
