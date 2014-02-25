@@ -1,4 +1,29 @@
+
+
+/*
+var userName = 'Dave';
+
+function showMsg() {
+    var userName = 'Ara'
+    var msg = 'Hi my name is ' + userName;
+    console.log(msg);
+}
+
+showMsg();
+console.log(userName);
+*/
+
+/*
 function count() {
+    var i, j;
+    for(i = 0; i < 3; i++) {
+        j = i * 2;
+    }
+    alert(i);
+    alert(j);
+}
+*/
+/*function count() {
     for(var i = 0; i < 3; i ++) {
         var j = i * 2;
     }
@@ -6,7 +31,7 @@ function count() {
     console.log(j); // j=4, последнее значение, на котором цикл сработал, было i=2
 }
 
-count()
+count()*/
 /*
 function msg() {
     var msggg = 'asdf qwer';
