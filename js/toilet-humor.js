@@ -1,4 +1,10 @@
-
+function showMsg (from, text) {
+    from = '*** ' + from + ' ***';
+    console.log(from + '\n\n' + text);
+}
+var from = 'are', text = 'vai';
+showMsg('are', 'vai');
+console.log(from);
 
 /*
 var userName = 'Dave';
