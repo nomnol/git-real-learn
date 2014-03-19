@@ -1,3 +1,87 @@
+/*
+function doNothing() {
+  return;
+}
+
+console.log(doNothing() === undefined); // true
+*/
+
+
+/*
+function doNothing() {}
+console.log(doNothing());
+*/
+/*
+function checkAge(age) {
+  age = 18 ? return true : return confirm('Родители разрешили?');
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Родители разрешили?');
+  }
+}
+*/
+
+
+
+/*
+function checkAge(age) {
+    if(age > 18) {
+        return true;
+    }
+    else {
+        var conf = confirm('Родители разрешили?');
+        if(conf) {
+            return true;
+        }
+    }
+}
+
+var age = prompt('Введите ваш возраст', '');
+
+if(checkAge(age)) {
+    console.log('Доступ разрешен');
+}
+else {
+    console.log('В доступе отказано');
+}
+*/
+
+
+
+/*
+function calcD(a, b, c) {
+   return b*b - 4*a*c;
+}
+
+var test = calcD(-4, 2, 1);
+console.log(test); // 20
+*/
+
+
+/*
+function showMessage(from, text) {
+    text = text || 'текст не передан';
+    console.log(from, text);
+}
+
+var from = from, text = text;
+showMessage('asdf')
+console.log(from, text);
+*/
+
+/*
+function showMessage(from, text) {
+    if(text == undefined) {
+        text = 'текст не передан';
+    }
+    console.log(from + ": " + text);
+}
+showMessage("Маша", "Привет!"); // Маша: Привет!
+showMessage("Маша"); // Маша: текст не передан
+
+*/
+/*
 function showMsg (from, text) {
     from = '*** ' + from + ' ***';
     console.log(from + '\n\n' + text);
@@ -5,6 +89,7 @@ function showMsg (from, text) {
 var from = 'are', text = 'vai';
 showMsg('are', 'vai');
 console.log(from);
+*/
 
 /*
 var userName = 'Dave';
