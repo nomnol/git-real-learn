@@ -1,3 +1,159 @@
+function pow(x, n) {
+    // пока n!=1, сводить вычисление pow(..,n) к pow(..,n-1)
+    if(n != 1) {
+        return x * pow(x, n - 1)
+    }
+    else {
+        return x;
+    }
+//    return (n != 1) ? x * pow(x, n - 1) : x;
+}
+alert(pow(2, 1)); // 8
+
+
+/**
+ * Возводит x в степень n (комментарий JSDoc)
+ *
+ * @param {number} x число, которое возводится в степень
+ * @param {number} n степень, должна быть целым числом больше 1
+ *
+ * @return {number} x в степени n
+ */
+/*
+function pow(x, n) {
+    var result = x;
+    for(var i = 1; i < n; i++) {
+        result *= x;
+        console.log(result);
+    }
+    return result;
+}
+
+var x = prompt("x?", '');
+var n = prompt("n?", '');
+
+if(n <= 1) {
+    alert('Степень ' + n + 'не поддерживается, введите целую степень, большую 1');
+} else {
+    alert(pow(x, n));
+}
+*/
+
+
+/*
+function pow(x, n) {
+    return Math.pow(x, n);
+}
+
+console.log(pow(2, 3));
+*/
+
+/*
+function returnLessNum(a, b) {
+    if(a > b) {
+        return a;
+    }
+    else if (a == b) {
+        return a;
+    }
+    else {
+        return b;
+    }
+}
+console.log(returnLessNum(-4, 2));
+*/
+
+/*
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Родители разрешили?');
+  }
+}
+*/
+/*
+
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  }
+  return confirm('Родители разрешили?');
+}
+
+
+var age = prompt('Ваш возраст?');
+
+if (checkAge(age)) {
+  alert('Доступ разрешен');
+} else {
+  alert('В доступе отказано');
+}
+
+
+
+
+*/
+
+
+/*
+function calcD(a, b, c) {
+  return b*b - 4*a*c;
+}
+
+var test = calcD(-4, 2, 1);
+console.log(test); // 20
+*/
+
+
+/*
+function showMessage(from, text) {
+    if(text === undefined) {
+        text = 'текст не передан';
+    }
+    alert(from + ": " + text);
+}
+showMessage("Маша", "Привет!"); // Маша: Привет!
+showMessage("Маша"); // Маша: текст не передан
+*/
+
+
+
+/*
+function showMessage(from, text) {
+    from = '**' + from + '**';  // (1), красиво оформили from
+    alert(from + '\n\n' + text);
+}
+var from = 'Маша', msg = 'Привет!'; // (2)
+showMessage(from, msg); // значения будут скопированы в параметры
+alert(from); // перезапись в строке (1) не повлияет на внешнюю переменную
+*/
+
+
+/*
+function showMessage(from, text) { // параметры from, text
+    from = "** " + from + " **"; // здесь может быть сложный код оформления
+    alert(from + '\n\n' + text);
+}
+showMessage('Маша', 'Привет!');
+showMessage('Маша', 'Как дела?');
+
+
+*/
+
+/*
+function count() {
+    var i, j;
+    for(i = 0; i < 3; i ++) {
+        j = i * 2;
+    }
+    console.log(i); // i=3
+    console.log(j); // j=4
+}
+
+count();
+*/
+
 /*
 function doNothing() {
   return;
