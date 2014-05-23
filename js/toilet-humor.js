@@ -1,3 +1,27 @@
+'use strict';
+
+/*
+
+asdf = 5 + 4;
+console.log(asdf);
+*/
+
+
+//console.log(12.222.toFixed(2));
+
+/*
+var num = 14.423412;
+console.log(num.toFixed(2), num.toFixed(6), num.toFixed(0), num.toFixed(1));
+*/
+
+
+/*
+var string = 'asdf jkl;';
+console.log(string.length, string.toUpperCase());
+*/
+
+
+/*
 function pow(x, n) {
     // пока n!=1, сводить вычисление pow(..,n) к pow(..,n-1)
     if(n != 1) {
@@ -10,6 +34,7 @@ function pow(x, n) {
 }
 alert(pow(2, 1)); // 8
 
+*/
 
 /**
  * Возводит x в степень n (комментарий JSDoc)
