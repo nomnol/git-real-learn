@@ -1,9 +1,333 @@
+var main = function() {
+    $('.dropdown-toggle').click(function() {
+       $('.dropdown-menu').toggle();
+    })
+    $('.arrow-next').click(function() {
+       var currentSlide = $('.active-slide'),
+           nextSlide = currentSlide.next(),
+           currentDot = $('.active-dot'),
+           nextDot = currentDot.next();
+        if(nextSlide.length == 0) {
+            nextSlide = $('.slide').first();
+            nextDot = $('.dot').first();
+        }
+       currentDot.removeClass('active-dot');
+       nextDot.addClass('active-dot');
+
+            currentSlide.fadeOut(600).removeClass('active-slide');
+            nextSlide.fadeIn(600).addClass('active-slide');
+
+        })
+
+/*    $('.arrow-prev').click(function() {
+       var currentSlide = $('.active-slide'),
+           prevSlide = currentSlide.prev();
+        currentSlide.fadeOut(600).removeClass('active-slide');
+        prevSlide.fadeIn(600).addClass('active-slide');
+    })
+ */
+}
+
+$(document).ready(main);
+$(function() {
+
+    $(document).keypress(function(event) {
+      if(event.which == 110) {
+        console.log('m is pressed');
+      }
+    });
+
+
+
+
+    var score1 = 23;
+    var score2 = 25;
+    var score3 = 21;
+
+    var sum = score1 + score2 + score3;
+    var average = sum / 3;
+
+    var range = score2 - score3;
+
+    var fraction = 23 / 30;
+    var percentage = fraction * 100;
+
+
+    function StaffMember(name,discountPercent){
+        this.name = name;
+        this.discountPercent = discountPercent;
+    }
+
+    var sally = new StaffMember("Sally",5);
+    var bob = new StaffMember("Bob",10);
+
+    // Create yourself again as 'me' with a staff discount of 20%
+    var me = new StaffMember("Ara", 20)
+
+    var cashRegister = {
+        total:0,
+        lastTransactionAmount: 0,
+        add: function(itemCost){
+            this.total += (itemCost || 0);
+            this.lastTransactionAmount = itemCost;
+        },
+        scan: function(item,quantity){
+            switch (item){
+                case "eggs": this.add(0.98 * quantity); break;
+                case "milk": this.add(1.23 * quantity); break;
+                case "magazine": this.add(4.99 * quantity); break;
+                case "chocolate": this.add(0.45 * quantity); break;
+            }
+            return true;
+        },
+        voidLastTransaction : function(){
+            this.total -= this.lastTransactionAmount;
+            this.lastTransactionAmount = 0;
+        },
+        // Create a new method applyStaffDiscount here
+        applyStaffDiscount: function(employee) {
+            this.total -= this.total * (employee.discountPercent / 100);
+        }
+
+
+    };
+
+    cashRegister.scan('eggs',1);
+    cashRegister.scan('milk',1);
+    cashRegister.scan('magazine',3);
+    cashRegister.applyStaffDiscount(me);
+    // Apply your staff discount by passing the 'me' object
+    // to applyStaffDiscount
+
+
+    // Show the total bill
+    console.log('Your bill is ' + cashRegister.total.toFixed(2));
+    /*
+
+
+     function Summator() {
+
+     this.sum = function(a, b) {
+     return a + b;
+     };
+
+     this.run = function() {
+     var a = +prompt('a?', 0); // преобразовать в число при вводе данных
+     var b = +prompt('b?', 0);
+     alert( "sum=" + this.sum(a, b) );
+     };
+     }
+
+     new Summator().run();
+     */
+    /*
+     function User(name) {
+     this.name = name;
+
+     this.sayHi = function() {
+     console.log("Моё имя: " + this.name);
+     return true;
+     };
+
+     }
+
+     var ivan = new User('Ivan Rodriguez');
+     console.log(ivan.sayHi());
+     */
+
+    /* Объект ivan имеет вид:
+     {
+     name: "Иван",
+     sayHi: функция, обращение к имени идёт через this.name
+     }
+     */
+
+//    ivan.sayHi(); // Моё имя: Иван
+
+
+
+    /*
+
+
+     function BigAnimal() {
+
+     this.name = 'Мышь';
+
+     return {
+     name: 'Годзилла',
+     num: 3
+     };
+     }
+
+     console.log( new BigAnimal().num);
+
+     */
+
+
+    /*
+     function Animal(name, canWalk) {
+     this.name = name;
+     this.canWalk = canWalk;
+     if(this.canWalk == true) {
+     return this.name + ' can walk';
+     }
+     else {
+     return this.name + ' can\'t walk';
+     }
+     }
+
+     var animal = Animal('Theodore', true);
+     var elephant = Animal('Slon', false);
+     console.log(animal, elephant);
+     */
+
+
+    /*
+
+     var ladder = {
+     step: 0,
+     up: function() {
+     this.step ++;
+     return this;
+     },
+     down: function() {
+     this.step --;
+     return this;
+     },
+     showStep: function() {
+     alert(this.step);
+     }
+     };
+
+
+     ladder.up().up().down().showStep();
+     */
+
+
+    /*
+     var calculator = {
+     sum: function () {
+     return this.a + this.b;
+     },
+     mul: function () {
+     return this.a * this.b;
+     },
+     readValues: function () {
+     this.a = +prompt('a?', 0);
+     this.b = +prompt('b?', 0);
+     }
+     }
+     calculator.readValues();
+     alert(calculator.sum());
+     alert(calculator.mul());
+     */
+
+    /*
+     var user = {
+     name: 'Василий',
+     sayHi: function () {
+     showName(this); // передать текущий объект в showName
+     }
+
+     };
+
+     function showName(obj) {
+     alert(obj.name);
+     }
+
+     user.sayHi();
+     */
+
+
+    /*
+     var user = {
+     name: 'Василий',
+     sayHi: function() {
+     alert('Привет! ' + user.name);
+     }
+     };
+
+
+     user.sayHi();
+     */
+
+
+//    var button = $('button.button');
+//    button[0].addEventListener('click', user.sayHi);
+
+//    function consoleText() {
+//        console.log('button is clicked')
+//    }
+
+
+//   var listItem = $('.listsss li'),
+//       list = $('.listsss');
+//    console.log(listItem.size(), list.size());
+//    console.log(listItem.length, list.length);
+})
+window.onload = function() {
+
+
 'use strict';
-////
+
+    var boxWrap = document.getElementById('boxes-container');
+    var span = boxWrap.getElementsByTagName('span');
+
+    for(var i = 0; i < span.length; i ++) {
+        span[i].addEventListener('click', boxHidder);
+    }
+    function boxHidder() {
+        this.parentNode.style.display = 'none';
+    }
+
+
+
+var button = document.getElementById('button');
+var dropBox = document.getElementById('dropdown');
+function handler() {
+    if(dropBox.style.display == 'none') {
+        dropBox.style.display = 'block';
+    }
+    else {
+        dropBox.style.display = 'none';
+    }
+}
+button.addEventListener( 'click' , handler)
+
+//button.detachEvent( "onclick", handler)
 
 /*
+document.getElementById('popup').onclick = function(e) {
+    this.style.display = 'none';
+    return false;
+}
+*/
 
-asdf = 5 + 4;
+/*
+function funcConsole(e) {
+    e.preventDefault();
+    console.log('funcConsole is activated');
+}
+
+$('.popup').on('click', funcConsole);
+
+*/
+
+////
+/*
+jQuery('a.popup').on('click', function () {
+    var newwindow = window.open($(this).attr('href'), '', 'height=200,width=150');
+    if(window.focus) {
+        newwindow.focus()
+        console.log(newwindow);
+        console.log(window);
+    }
+    return false;
+});
+*/
+/*
+
+ asdf = 5 + 4;
 console.log(asdf);
 */
 
@@ -757,3 +1081,4 @@ while(1) {
 
 console.log('Last "i" is: ' + i);
 */
+}
