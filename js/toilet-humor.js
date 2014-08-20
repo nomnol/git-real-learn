@@ -1,6 +1,16 @@
 //asdfasdf
 //qwer
+
+
 var main = function() {
+
+    var isAra = false,
+        weapon;
+
+    weapon = isAra ? 'gun' : 'gun machine';
+
+    console.log('the weapon is: ' + (!isAra ? 'gun' : 'gun machine'));
+
     $('.dropdown-toggle').click(function() {
        $('.dropdown-menu').toggle();
     })
